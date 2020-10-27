@@ -58,7 +58,7 @@ def get_version():
     patch = 0
 
     for l in lines:
-        if l.find("HIGRA_VERSION_MAJOR") >= 0:
+        if l.find("HIGRA_VERSION_MAJOR") >= 0: // participating in hacktoberfest
             major = int(l.split(' ')[2])
         if l.find("HIGRA_VERSION_MINOR") >= 0:
             minor = int(l.split(' ')[2])
